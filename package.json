@@ -1,0 +1,27 @@
+{
+  "name": "d3-statistics",
+  "version": "1.0.0",
+  "description": "Statistics package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javadebadi/d3-statistics.git"
+  },
+  "keywords": [
+    "d3",
+    "statistics",
+    "math"
+  ],
+  "author": "Javad Ebadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javadebadi/d3-statistics/issues"
+  },
+  "homepage": "https://github.com/javadebadi/d3-statistics#readme",
+  "dependencies": {
+    "d3": "^7.8.2"
+  }
+}
