@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+import {range} from 'd3';
 
 
 /** @class Gaussian Distribution representing a Gaussian (Normal) Distribution. */
@@ -59,13 +59,13 @@ class GaussianDistribution {
      *
      * @param {number} x_min The minimum limit of x point to calculate PDF of the Gaussian Distribution.
      * @param {number} x_min The maximum limit of x point to calculate PDF of the Gaussian Distribution.
-     * @param {number} n_points The number of points to generate the x,y values for the Guassian Distribution.
+     * @param {number} n_points The number of points to generate the x,y values for the Gaussian Distribution.
      * 
      * @return {Array} The Array of x and PDF(x) values of Gaussian Distribution.
      */
     pdfPoints(x_min, x_max, n_points=10) {
         const step = (x_max - x_min) / (n_points - 1);
-        const xs = d3.range(x_min, x_max + step, step);
+        const xs = range(x_min, x_max + step, step);
         const ys = xs.map((x) => (this.pdf(x)));
         return [
             xs,
